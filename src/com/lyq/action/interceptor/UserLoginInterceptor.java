@@ -24,7 +24,7 @@ public class UserLoginInterceptor extends AbstractInterceptor {
 			// 调用执行方法
 			return invocation.invoke();
 		}
-		// 返回登录
+		// 返回登录  
 		return BaseAction.USER_LOGIN;
 	}
 }
