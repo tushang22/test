@@ -16,7 +16,7 @@ public interface BaseDao<T> {
 	public Object uniqueResult(String hql, Object[] queryParams);//使用hql语句操作
 	//分页操作
 	public long getCount();//获取总信息数
-	public PageModel<T> find(int pageNo, int maxResult);//普通分页操作
+	public PageModel<T> find(int pageNo, int maxResult);//普通分页操作 重要
 	public PageModel<T> find(int pageNo, int maxResult,String where, Object[] queryParams);//搜索信息分页方法
 	public PageModel<T> find(int pageNo, int maxResult,Map<String, String> orderby);//按指定条件排序分页方法
 	public PageModel<T> find(String where, Object[] queryParams,
